@@ -112,6 +112,7 @@
     }
     .subcontainer {
         width: 100%;
+        height: calc(100vh - 116px);
         flex-direction: column-reverse;
     }
     #introduction {

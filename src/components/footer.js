@@ -5,21 +5,25 @@ function Footer() {
   const stl = {
     footer_container: {
       width: "100%",
-      height: "22px",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
       color: netClr,
       fontSize: "12px",
       fontFamily: "system-ui",
+    },
+    footer: {
+      width: "98%",
+      height: "22px",
       textAlign: "center",
       backgroundColor: "#FFFFFF10",
-      backdropFilter: "blur(5px)",
-      
-    },
+      backdropFilter: "blur(12px)",
+      borderRadius: "11px",
+      boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
+    }
   }
   return (
-    <div style={stl.footer_container}>Copyright &#169; 2023 | Developed by Rajan Patel</div>
+    <div style={stl.footer_container}><div style={stl.footer}>Copyright &#169; 2023 | Developed by Rajan Patel</div></div>
   )
 }
 
