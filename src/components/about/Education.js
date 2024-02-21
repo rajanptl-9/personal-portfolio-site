@@ -11,7 +11,7 @@ function Education() {
                 <ul class="progress">
                     <li class="progress__item progress__item--completed">
                         <div className='education_text'>
-                            <a className='progress__title' style={{ textDecoration: "none", fontSize: "24px", fontWeight: "600", textAlign: "center", color: "#233b5a" }}>SMT M.R.C. High School Dihen (2018)</a>
+                            <span href='#'  className='progress__title' rel="noopener noreferrer" style={{ textDecoration: "none", fontSize: "24px", fontWeight: "600", textAlign: "center", color: "#233b5a" }}>SMT M.R.C. High School Dihen (2018)</span>
                             <span className='progress__info' style={{ fontSize: "16px", textAlign: "center" }}>I have successfully completed my secondary education from the GSE Board at SMT MRC High School, Dihen.</span>
                         </div>
                     </li>
