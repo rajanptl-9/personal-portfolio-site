@@ -14,8 +14,8 @@ function Footer() {
       fontFamily: "system-ui",
       textAlign: "center",
       backgroundColor: "#FFFFFF10",
-      backdropFilter: "blur(12px)",
-      boxShadow: "1px 1px 5px rgba(0, 0, 0, 0.2)",
+      backdropFilter: "blur(5px)",
+      
     },
   }
   return (
