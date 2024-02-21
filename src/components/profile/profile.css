@@ -1,18 +1,16 @@
 #profile {
     width: 100%;
-    height: fit-content;
-    margin-bottom: 34px;
+    height: calc(100vh - 116px);
     z-index: 1;
-    border-radius: 16px;
+    border-radius: 16px;    
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .subcontainer {
     width: 98%;
-    height:84vh;
     padding: 0 10%;
     border-radius: 16px;
     display: flex;
@@ -97,12 +95,11 @@
 @media screen and (max-width: 768px) {
     #profile {
         width: 98%;
-        height: 90%;
-        margin-bottom: 24px;
+        overflow-y: scroll;
+        display: block;
     }
     .subcontainer {
         width: 100%;
-        min-height: 81vh;
         flex-direction: column-reverse;
     }
     #introduction {
@@ -121,6 +118,8 @@
     .dynamictext{
         width: 100%;
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
     #description {
         width: 100%;

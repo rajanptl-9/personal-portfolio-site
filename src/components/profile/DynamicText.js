@@ -3,7 +3,7 @@ import './profile.css';
 
 const TypingEffect = () => {
   const [text, setText] = useState('');
-  const phrases = ['Student!', 'Web Developer!', 'Software Developer!'];
+  const phrases = ['Student', 'Web Developer', 'Software Developer'];
   const typingSpeed = 100; 
   const erasingSpeed = 100; 
   const pauseBetweenPhrases = 500; 
@@ -38,7 +38,7 @@ const TypingEffect = () => {
     // eslint-disable-next-line
   }, [text, phraseIndex, phrases]);
   return (
-    <div className="dynamictext" style={{fontSize:"32px"}}>I am a {text}</div>
+    <div className="dynamictext" style={{fontSize:"32px"}}><span>I am a</span> <span>{text}!</span></div>
   );
 };
 

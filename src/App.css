@@ -39,23 +39,20 @@
 
 .main_container {
   position: fixed;
-  width: 100%;
-  min-height: 100%;
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
   justify-content: space-between;
-  padding: 12px 0 34px 0;
+  padding: 12px 0 0 0;
 }
 
 .main_subcontainer{
   width:98%; 
-  height:84vh; 
+  height:calc(100vh - 112px); 
   overflow-y: auto;
   padding: 24px 0;
-  display:flex;    
-  justify-content:center;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 16px;
@@ -63,7 +60,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
   height: 10px;
 }
 
@@ -84,16 +81,9 @@
   border-radius: 4px;
 }
 
-@media screen and (max-width: 1200px) {
-  .main_subcontainer{
-    width:98%; 
-    height:82vh;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .main_subcontainer{
     width:98%; 
-    height:87vh;
+    height:calc(100vh - 112px);
   }
 }

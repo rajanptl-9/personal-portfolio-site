@@ -44,7 +44,7 @@
 }
 
 .education_text {
-    min-width: 260px;
+    min-width: 100%;
     padding: 16px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -139,5 +139,11 @@
 @media screen and (max-width: 1200px) {
     .education_subcontainer {
         width: 94%;
+    }
+    .progress__item {
+        width: calc(100vw-100px);
+    }
+    .education_text {
+        width: 90%;
     }
 }
