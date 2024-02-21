@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
 }
 
 .subcontainer {
@@ -92,10 +93,22 @@
     box-shadow: 0px 6px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 1200px) {
+    #profile {
+        width: 98%;
+        display: block;
+    }
+    .dynamictext{
+        width: 100%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #profile {
         width: 98%;
-        overflow-y: scroll;
         display: block;
     }
     .subcontainer {
@@ -116,10 +129,7 @@
         text-align: center;
     }
     .dynamictext{
-        width: 100%;
         text-align: center;
-        display: flex;
-        flex-direction: column;
     }
     #description {
         width: 100%;

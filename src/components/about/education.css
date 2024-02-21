@@ -141,7 +141,7 @@
         width: 94%;
     }
     .progress__item {
-        width: calc(100vw-100px);
+        width: 100%;
     }
     .education_text {
         width: 90%;
