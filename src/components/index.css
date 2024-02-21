@@ -61,6 +61,7 @@
 }
 
 .buttons {
+    width: 120px;
     height: 40px;
     padding: 18px;
     margin-inline: 10px;

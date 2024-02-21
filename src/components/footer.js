@@ -11,16 +11,17 @@ function Footer() {
       color: netClr,
       fontSize: "12px",
       fontFamily: "system-ui",
-      position: "fixed",
+      position: "sticky",
       bottom: "0",
-      zIndex: "11",    },
-    footer:{
+      zIndex: "11",
+    },
+    footer: {
       width: "98%",
       height: "22px",
-      textAlign:"center",
+      textAlign: "center",
       backgroundColor: "#FFFFFF10",
       backdropFilter: "blur(12px)",
-      borderRadius:"11px",
+      borderRadius: "11px",
       boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
     }
   }

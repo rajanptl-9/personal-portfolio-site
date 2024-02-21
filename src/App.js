@@ -13,8 +13,8 @@ function App() {
         <div className='main_container'>
           <Navigationbar />
           <ContentPages />
+          <Footer />
         </div>
-        <Footer />
       </div>
     </ContextVar>
   );
