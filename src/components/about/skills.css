@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+.skill_container{
+    width:68%;
+    height:fit-content;
+    display: flex;
+    margin: 20px 0;
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap:wrap;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1.5px #233b5a;
+}
+#skills_title{
+    width:100%;
+    font-size:48px;            
+    /* font-family: 'Rubik'; */
+    font-family: 'Roboto', sans-serif;
+    color: #233b5a;
+    text-align: center;
+    margin-bottom:10px
+}
+#skills_subtitle{
+    width:100%;
+    font-size:28px;
+    color: #233b5a;
+    text-align: center;
+    margin-bottom:10px;
+    font-family: "Signika Negative";
+}
+.skills{
+    width:80%;
+    height:fit-content;
+    display: flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-bottom:10px
+}
+
+.skill{
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    .skill_container{
+        width:80%;
+    }
+}

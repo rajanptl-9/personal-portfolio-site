@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import VideoBackground from './components/VideoBackground ';
+import Navigationbar from './components/Navigationbar';
+import Footer from './components/footer.js';
+import ContentPages from './components/ContentPages';
+import { ContextVar } from './components/ContextVar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ContextVar>
+      <div style={{ position: "fixed", width: "100%", height: "100%" }}>
+        <VideoBackground />
+        <div className='main_container'>
+          <Navigationbar />
+          <ContentPages />
+        </div>
+        <Footer />
+      </div>
+    </ContextVar>
   );
 }
 

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+.form-group {
+    position: relative;
+}
+
+input {
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #999;
+    box-shadow: 1px 1px 3px #233b5a;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+input:focus {
+    border-bottom: 2px solid #333;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+input:focus+label,
+
+input:not(:placeholder-shown)+label {
+    top: -1.5em;
+    font-size: 0.8em;
+    color: #333;
+}
+
+textarea {
+    width: 96.8%;
+    border-radius: 4px;
+    height: 150px;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #999;
+    box-shadow: 1px 1px 3px #233b5a;
+    resize: vertical;
+    /* Allows vertical resizing */
+    min-height: 100px;
+    /* Set minimum height */
+    outline: none;
+}
+
+textarea:focus {
+    border-bottom: 2px solid #333;
+}
+
+textarea:focus+label,
+
+textarea:not(:placeholder-shown)+label {
+    top: -1.5em;
+    font-size: 0.8em;
+    color: #333;
+}
+
+.mail_form {
+    width: 50%;
+    padding: 16px;
+    height: 360px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1.5px #233b5a;
+}
+
+.form_title {
+    width: 100%;
+    height: fit-content;
+    font-size: 32px;
+    /* font-family: 'Rubik'; */
+    font-family: 'Roboto', sans-serif;
+    padding-left: 0.5vw;
+    color: #233b5a;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.sender_details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#name,
+#subject {
+    width: 50%;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.button {
+    width: 170px;
+    height: 42px;
+    background-color: #233b5a;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px;
+    margin-inline: 10px;
+    font-size: 24px;
+    font-family: "Signika Negative";
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .mail_form {
+        width: 100%;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form_title {
+        justify-content: center;
+    }
+    #name,
+    #subject {
+        flex-wrap: wrap;
+        width: 46%;
+    }
+    .button_holder {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mail_form {
+        width: 100%;
+        height: 340px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .button {
+        margin-inline: 0;
+    }
+
+    #name,
+    #subject {
+        flex-wrap: wrap;
+        width: 98%;
+    }
+}

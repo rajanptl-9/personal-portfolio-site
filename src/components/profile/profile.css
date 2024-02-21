@@ -1,0 +1,138 @@
+#profile {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 34px;
+    z-index: 1;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subcontainer {
+    width: 98%;
+    height:84vh;
+    padding: 0 10%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#introduction {
+    width: 40%;
+    color: #233b5a;
+    font-family: Rowdies;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#subheadfont {
+    width: 100%;
+    font-size: 38px;
+}
+
+#headfont {
+    width: 100%;
+    font-size: 52px;
+    font-family: Rubik;
+    font-weight: 700;
+}
+
+#description {
+    width: 100%;
+    font-family: "Ubuntu";
+}
+
+#downloadcv {
+    width: 174px;
+    height: 48px;
+    background-color: #233b5a;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    font-size: 20px;
+    font-family: "Signika Negative";
+}
+
+.socialmedia {
+    width: 172px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.platform {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 21px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.profileimage {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    background-image: url('./profile.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(0.6px);
+    /* border: 2.4vw solid #233b5a; */
+    box-shadow: 0px 6px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    #profile {
+        width: 98%;
+        height: 90%;
+        margin-bottom: 24px;
+    }
+    .subcontainer {
+        width: 100%;
+        min-height: 81vh;
+        flex-direction: column-reverse;
+    }
+    #introduction {
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+    }
+    #subheadfont {
+        width: 100%;
+        text-align: center;
+    }    
+    #headfont {
+        width: 100%;
+        text-align: center;
+    }
+    .dynamictext{
+        width: 100%;
+        text-align: center;
+    }
+    #description {
+        width: 100%;
+        padding-inline: 10px;
+        text-align: center;
+        background-color: #FFFFFF10;
+        backdrop-filter: blur(5px);
+        border-radius: 8px;
+    }
+    .profileimage {
+        width: 250px;
+        height: 250px;
+    }
+
+}

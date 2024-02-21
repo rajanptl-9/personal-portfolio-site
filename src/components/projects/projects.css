@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+.project_subcontainer{
+    width:98%; 
+    height:fit-content; 
+    overflow-y: auto;
+    display:flex;    
+    justify-content:center;
+    align-items: center;
+}
+.projects{
+    width:100%; 
+    height: fit-content; 
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.project_title {
+    width: 100%;
+    height: fit-content;
+    font-size: 48px;
+    /* font-family: 'Rubik'; */    
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+#title_box{ 
+    color: white; 
+    background-color: #233b5a; 
+    padding: 5px 16px; 
+    border-radius: 10px;
+}
+.project{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
