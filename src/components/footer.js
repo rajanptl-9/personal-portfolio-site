@@ -23,7 +23,7 @@ function Footer() {
     }
   }
   return (
-    <div style={stl.footer_container}><div style={stl.footer}>Copyright &#169; 2023 | Developed by Rajan Patel</div></div>
+    <div style={stl.footer_container}><div style={stl.footer}>Copyright &#169; {new Date().getFullYear()} | Developed by Rajan Patel</div></div>
   )
 }
 

@@ -42,6 +42,10 @@
   border-radius: 4px;
 }
 @media screen and (max-width: 1200px) {
+  .main_container {
+    width: 100dvw;
+    height: 100dvh;
+  }
   .main_subcontainer{
     width:98%; 
     height:calc(100% - 112px);
